@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>text</title>
+</head>
+
+<body>
+    <canvas width="800" height="700" id="canvas"></canvas>
+    <script>
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+        var grad = ctx.createLinearGradient(0, 0, 200, 0);
+        grad.addColorStop(0, "white");
+        grad.addColorStop(0.5, "red");
+        grad.addColorStop(1, "black");
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, 400, 200);
+    </script>
+</body>
+
+</html>

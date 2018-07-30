@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>opac</title>
+</head>
+
+<body>
+
+    <body>
+        <canvas width="400" height="300" id="canvas"></canvas>
+        <script>
+            var canvas = document.getElementById('canvas');
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = 'red';
+            // делим на 100 чтобы получить дробь между 0 и 1
+            ctx.globalAlpha = 50 / 100;
+            ctx.fillRect(0, 0, 100, 100);
+            ctx.globalAlpha = 20 / 100;
+            ctx.fillRect(25, 25, 150, 150);
+            ctx.globalAlpha = 1.0;
+        </script>
+    </body>
+
+</html>

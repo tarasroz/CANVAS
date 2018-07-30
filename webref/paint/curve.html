@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>curve</title>
+</head>
+
+<body>
+    <canvas width="800" height="700" id="canvas"></canvas>
+    <script>
+        var canvas = document.getElementById('canvas');
+        var c = canvas.getContext('2d');
+        c.fillStyle = 'red';
+        c.beginPath();
+        c.moveTo(10, 30);
+        c.bezierCurveTo(50, 170, 120, -30, 200, 30);
+        c.lineTo(200, 90);
+        c.lineTo(10, 90);
+        c.closePath();
+        c.fill();
+        c.lineWidth = 4;
+        c.strokeStyle = 'black';
+        c.stroke();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+<svg width="340" height="240" fill='none' xmlns="http://www.w3.org/2000/svg">
+
+  <polyline points="111 61.5 217.984 61.5 123.035 180.231 229.738 180.06" stroke='teal' stroke-width='80' stroke-linecap='square'></polyline>
+
+  <polyline points="122 61.5 217.984 61.5 123.035 180.231 218.738 180.06"
+    stroke='lightseagreen' stroke-width='50' 
+    stroke-linecap='round' stroke-linejoin='round'>
+  </polyline>
+
+  <polyline points=
+  "120 61.5 217.984 61.5 123.035 180.231 220.738 180.06"
+    stroke='gold' stroke-width='10' stroke-linejoin='bevel'>
+  </polyline>
+
+</svg>

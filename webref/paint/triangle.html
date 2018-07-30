@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tangle</title>
+</head>
+
+<body>
+    <canvas width="800" height="700" id="canvas"></canvas>
+    <script>
+        var canvas = document.getElementById('canvas');
+        var c = canvas.getContext('2d');
+        c.fillStyle = '#ccddff';
+        c.beginPath();
+        c.moveTo(50, 120);
+        c.lineTo(200, 150);
+        c.lineTo(150, -5);
+        c.closePath();
+        c.fill();
+        c.strokeStyle = 'rgb(0,128,0)';
+        c.lineWidth = 6;
+        c.stroke();
+    </script>
+</body>
+
+</html>
